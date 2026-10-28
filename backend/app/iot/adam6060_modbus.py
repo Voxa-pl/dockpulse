@@ -11,7 +11,7 @@ from typing import Dict, Any, Optional, Tuple
 from dataclasses import dataclass, field
 from datetime import datetime
 
-logger = logging.getLogger("ramparandevu.iot.adam6060")
+logger = logging.getLogger("dockpulse.iot.adam6060")
 
 class SafetyInterlockException(Exception):
     """Bariyer altında araç varken (Güvenlik Fotoseli kesilmişken) kapatma komutu engellendiğinde fırlatılır."""

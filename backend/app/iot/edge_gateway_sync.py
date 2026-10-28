@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime
 
-logger = logging.getLogger("ramparandevu.iot.edge_sync")
+logger = logging.getLogger("dockpulse.iot.edge_sync")
 
 class EdgeStoreAndForward:
     """

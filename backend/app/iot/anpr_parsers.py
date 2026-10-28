@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from datetime import datetime
 import logging
 
-logger = logging.getLogger("ramparandevu.iot.anpr")
+logger = logging.getLogger("dockpulse.iot.anpr")
 
 @dataclass
 class ParsedANPR:

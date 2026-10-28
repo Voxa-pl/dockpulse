@@ -59,7 +59,7 @@ $$T_{slot} = T_{docking} + (N_{pallets} \times T_{handling}) + T_{inspection} + 
 ### 1. Linux / macOS:
 ```bash
 cd /root/LojistikGirisimleri/ramparandevu
-./run_ramparandevu.sh
+./run_dockpulse.sh
 ```
 
 ### 2. Windows:

@@ -3,6 +3,7 @@
 *.db-shm
 *.db-wal
 backend/ramparandevu.db*
+backend/dockpulse.db*
 backend/edge_offline_store.db*
 
 # Uploads & Temporary Media

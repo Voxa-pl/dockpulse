@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 import logging
 
-logger = logging.getLogger("ramparandevu.iot.weighbridge")
+logger = logging.getLogger("dockpulse.iot.weighbridge")
 
 @dataclass
 class AxleWeights:

@@ -10,7 +10,7 @@ class Settings:
     API_V1_PREFIX: str = "/api/v1"
     
     # Absolute path to database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", f"sqlite+aiosqlite:///{BASE_DIR}/ramparandevu.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", f"sqlite+aiosqlite:///{BASE_DIR}/dockpulse.db")
     
     # DocuLog Bridge
     DOCULOG_BASE_URL: str = os.getenv("DOCULOG_BASE_URL", "http://127.0.0.1:8000")

@@ -38,7 +38,7 @@ from app.iot.adam6060_modbus import adam6060, SafetyInterlockException
 from app.iot.edge_gateway_sync import edge_store
 from app.iot.telemetry_service import edge_telemetry
 
-logger = logging.getLogger("ramparandevu.api.edge")
+logger = logging.getLogger("dockpulse.api.edge")
 
 # ============================================================================
 # ENDÜSTRİYEL EDGE GÜVENLİK VE YETKİLENDİRME (P0 CRITICAL FIX)
