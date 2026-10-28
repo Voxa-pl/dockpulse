@@ -1,0 +1,43 @@
+# Databases & Runtime State
+*.db
+*.db-shm
+*.db-wal
+backend/ramparandevu.db*
+backend/edge_offline_store.db*
+
+# Uploads & Temporary Media
+uploads/*
+!uploads/.gitkeep
+
+# Python cache & virtualenvs
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache
+
+# Node.js & Dependencies
+node_modules
+frontend/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+*.env
+.env.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
