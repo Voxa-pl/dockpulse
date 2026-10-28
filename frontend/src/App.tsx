@@ -103,7 +103,7 @@ export function App() {
 
   // Initial welcome log
   useEffect(() => {
-    addLog('SİSTEM_BAŞLATILDI', 'RampaRandevu YMS işletim motoru çevrimiçi.', 'info');
+    addLog('SİSTEM_BAŞLATILDI', 'DockPulse YMS işletim motoru çevrimiçi.', 'info');
   }, [addLog]);
 
   return (

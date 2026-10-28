@@ -21,7 +21,7 @@ from app.api.routes_simulation import router as simulation_router
 from app.services.yard_simulator import yard_simulator
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("ramparandevu")
+logger = logging.getLogger("dockpulse")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -30,14 +30,14 @@ async def lifespan(app: FastAPI):
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     
-    logger.info("Seeding initial facility & sample appointments...")
+    logger.info("Checking facility configuration...")
     async with AsyncSessionLocal() as session:
         await seed_database(session)
     
-    logger.info("RampaRandevu backend initialized successfully.")
+    logger.info("DockPulse backend initialized successfully.")
     yield
     # Shutdown
-    logger.info("Shutting down RampaRandevu backend...")
+    logger.info("Shutting down DockPulse backend...")
     yard_simulator.stop()
     await engine.dispose()
 

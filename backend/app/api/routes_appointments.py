@@ -144,7 +144,7 @@ async def export_appointments_report(
         ])
 
     output.seek(0)
-    filename = f"RampaRandevu_Vardiya_Raporu_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    filename = f"DockPulse_Vardiya_Raporu_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
     return StreamingResponse(
         io.BytesIO(output.getvalue().encode('utf-8-sig')),
         media_type="text/csv",

@@ -137,7 +137,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
     }
   };
 
-  // Inspect DocuLog Receipt
+  // Inspect Waybill Receipt
   const handleInspectAndComplete = async (app: Appointment) => {
     setReceiptModalApp(app);
     setLoadingReceipt(true);
@@ -485,7 +485,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
 
                               {activeApp.doculog_status === 'MATCH_OK' && (
                                 <span className="text-[10px] bg-cyan-950 text-cyan-300 border border-cyan-800 px-1.5 py-0.5 rounded font-bold font-mono">
-                                  DocuLog %99.4
+                                  Waybill %99.4
                                 </span>
                               )}
                             </div>
@@ -541,7 +541,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
                             className="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs py-2 rounded-lg shadow cursor-pointer transition-all flex items-center justify-center space-x-1.5"
                           >
                             <FileText className="w-4 h-4" />
-                            <span>DocuLog Mal Kabul İncele</span>
+                            <span>Waybill Mal Kabul İncele</span>
                           </button>
                         )}
 
@@ -652,7 +652,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
                                       <span className="font-mono font-bold text-[11px] truncate">{app.vehicle_plate}</span>
                                     </div>
                                     {app.doculog_status === 'MATCH_OK' && (
-                                      <span className="text-[8px] bg-cyan-950 text-cyan-300 px-1 rounded font-bold border border-cyan-800" title="DocuLog OCR Eşleşti">
+                                      <span className="text-[8px] bg-cyan-950 text-cyan-300 px-1 rounded font-bold border border-cyan-800" title="Waybill OCR Eşleşti">
                                         AI
                                       </span>
                                     )}
@@ -682,7 +682,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
                     <th className="p-2.5">Durum</th>
                     <th className="p-2.5">Dwell</th>
                     <th className="p-2.5">Net Tonaj</th>
-                    <th className="p-2.5">DocuLog</th>
+                    <th className="p-2.5">Waybill</th>
                     <th className="p-2.5 text-right">Aksiyon</th>
                   </tr>
                 </thead>
@@ -797,7 +797,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
                     className="bg-cyan-600 hover:bg-cyan-500 text-white px-3 py-1.5 rounded text-xs font-bold shadow flex items-center space-x-1 cursor-pointer transition-all"
                   >
                     <FileText className="w-3.5 h-3.5" />
-                    <span>DocuLog İncele & Kabul Et</span>
+                    <span>Waybill İncele & Kabul Et</span>
                   </button>
                 )}
 
@@ -900,7 +900,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
         </div>
       </div>
 
-      {/* DocuLog Split-Screen Inspection Modal (Mobile & Tablet Friendly) */}
+      {/* Waybill Split-Screen Inspection Modal (Mobile & Tablet Friendly) */}
       {receiptModalApp && (
         <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4">
           <div className="bg-charcoal-900 border border-charcoal-700 rounded-2xl w-full max-w-5xl max-h-[94vh] overflow-hidden shadow-2xl flex flex-col">
@@ -912,7 +912,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-base font-bold text-white flex items-center space-x-2">
-                    <span>DocuLog Workstation — Mal Kabul Teftişi</span>
+                    <span>Waybill Workstation — Mal Kabul Teftişi</span>
                     <span className="hidden sm:inline text-xs bg-cyan-900 text-cyan-300 px-2 py-0.5 rounded font-mono">
                       Gemini 3.8 Flash Vision
                     </span>
@@ -934,7 +934,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
             <div className="p-3 sm:p-6 overflow-y-auto space-y-3 sm:space-y-4">
               {loadingReceipt ? (
                 <div className="py-16 text-center text-slate-400 text-sm">
-                  DocuLog irsaliye verileri yükleniyor...
+                  Waybill irsaliye verileri yükleniyor...
                 </div>
               ) : receiptData ? (
                 <>
@@ -962,7 +962,7 @@ export const DockCockpitView: React.FC<DockCockpitViewProps> = ({
                   <div className="bg-charcoal-800/80 border border-charcoal-700 rounded-xl overflow-hidden">
                     <div className="p-2.5 sm:p-3 bg-charcoal-800 border-b border-charcoal-700 flex items-center justify-between text-xs font-bold text-slate-300">
                       <span>İRSALİYE KALEMLERİ VE FİZİKİ SAYIM</span>
-                      <span className="text-emerald-400 font-mono text-[11px]">DocuLog: %99.2</span>
+                      <span className="text-emerald-400 font-mono text-[11px]">Waybill: %99.2</span>
                     </div>
 
                     <div className="overflow-x-auto">

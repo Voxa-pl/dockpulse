@@ -1,7 +1,7 @@
-# RampaRandevu — Akıllı Depo Saha ve Rampa Yönetim Sistemi (YMS)
+# DockPulse — Akıllı Depo Saha ve Rampa Yönetim Sistemi (YMS)
 ### Next-Gen Yard & Dock Appointment Management System
 
-Türkiye lojistik merkezlerinde (Gebze, Hadımköy, Dilovası vb.) ambar ve fabrika kapılarındaki plansız tır yığılmasını, bekleme cezalarını (*demurrage*) ve rampa kaosunu ortadan kaldıran; **15 dakikalık kuantum dinamik slotlama**, **sıfır-indirme (Zero-App) şoför deneyimi**, **güneş modu destekli nizamiye tableti** ve [DocuLog](file:///root/LojistikGirisimleri/doculog) ile **yolda evrak ön-ayrıştırma** sağlayan kurumsal B2B saha yönetim platformu.
+Türkiye lojistik merkezlerinde (Gebze, Hadımköy, Dilovası vb.) ambar ve fabrika kapılarındaki plansız tır yığılmasını, bekleme cezalarını (*demurrage*) ve rampa kaosunu ortadan kaldıran; **15 dakikalık kuantum dinamik slotlama**, **sıfır-indirme (Zero-App) şoför deneyimi**, **güneş modu destekli nizamiye tableti** ve [Waybill](file:///root/LojistikGirisimleri/doculog) ile **yolda evrak ön-ayrıştırma** sağlayan kurumsal B2B saha yönetim platformu.
 
 ---
 
@@ -12,7 +12,7 @@ Türkiye lojistik merkezlerinde (Gebze, Hadımköy, Dilovası vb.) ambar ve fabr
    - Anlık kırmızı "Now Line" göstergesi.
    - Durum bazlı renk kodlaması: Planlı (Mavi), Tır Parkında (Sarı), Yanaşıyor (Mor), Rampada Boşaltılıyor (Yeşil), Tamamlandı (Gri).
    - **Tır Parkı (Buffer Yard) Çekmecesi:** Kapıdan giren araçları tek tıkla rampa seçerek şoförün cebine SMS/WhatsApp ile çağırma.
-   - **DocuLog Mal Kabul Doğrulama:** Gemini 3.8 Flash Vision ile okunmuş irsaliye kalemlerini tek ekranda inceleme, sağlam/hasarlı ayrıştırma ve SAP 101/103 mal girişi mühürleme.
+   - **Waybill Mal Kabul Doğrulama:** Gemini 3.8 Flash Vision ile okunmuş irsaliye kalemlerini tek ekranda inceleme, sağlam/hasarlı ayrıştırma ve SAP 101/103 mal girişi mühürleme.
 
 2. **🛡️ Nizamiye Kapı Tableti (Rugged Field Mode):**
    - Güneş altında okunabilir **2500+ Lux Yüksek Kontrast Modu**.
@@ -43,12 +43,12 @@ $$T_{slot} = T_{docking} + (N_{pallets} \times T_{handling}) + T_{inspection} + 
 
 ---
 
-## 🔗 DocuLog & ERP Sinerjisi
+## 🔗 Waybill & ERP Sinerjisi
 
-| Bileşen | RampaRandevu Rolü | DocuLog & ERP Entegrasyonu |
+| Bileşen | DockPulse Rolü | Waybill & ERP Entegrasyonu |
 | :--- | :--- | :--- |
 | **Ön-Ayrıştırma** | Randevu anında irsaliye yüklenir | Gemini 3.8 Flash Vision ile araç yoldayken OCR + PO mutabakatı |
-| **Rampa Boşaltma** | Amir fiili sayımı yapar | Sağ panelde DocuLog irsaliye satırları anında eşlenir |
+| **Rampa Boşaltma** | Amir fiili sayımı yapar | Sağ panelde Waybill irsaliye satırları anında eşlenir |
 | **Kısmi Mal Kabul** | Hasarlı koli/çuval tespiti | SAP `101 (Sağlam Giriş)` ve SAP `103 (Bloke Giriş)` ayrımı |
 | **Mevzuat** | Sefer tamamlandığında çıkış | Ulaştırma Bakanlığı U-ETDS bildirim kapanışı |
 

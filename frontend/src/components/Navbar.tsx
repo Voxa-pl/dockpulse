@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   LayoutDashboard, ShieldCheck, Smartphone, PlusCircle, 
-  Clock, Warehouse, Settings2 
+  Clock, Warehouse, Settings2, Truck
 } from 'lucide-react';
 import { Facility, Dock } from '../types';
 
@@ -33,13 +33,13 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between w-full sm:w-auto">
           {/* Brand & Dynamic Facility Info */}
           <div className="flex items-center space-x-2.5">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-black text-white text-base sm:text-lg tracking-wider shadow-md shadow-cyan-500/20 flex-shrink-0">
-              RR
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-600/25 flex-shrink-0">
+              <Truck className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
               <div className="flex items-center space-x-1.5">
-                <h1 className="text-sm sm:text-base font-bold tracking-tight text-white">RampaRandevu</h1>
-                <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.2 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/60 font-mono">
+                <h1 className="text-sm sm:text-base font-bold tracking-tight text-white">DockPulse</h1>
+                <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.2 rounded bg-blue-950 text-blue-400 border border-blue-800/60 font-mono">
                   YMS
                 </span>
               </div>

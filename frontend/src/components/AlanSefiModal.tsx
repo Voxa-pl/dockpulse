@@ -69,7 +69,7 @@ export const AlanSefiModal: React.FC<AlanSefiModalProps> = ({ isOpen, onClose })
             }`}
           >
             <Database className="w-4 h-4" />
-            <span>2. DocuLog Vision & SAP 101/103 Akışı</span>
+            <span>2. Waybill Vision & SAP 101/103 Akışı</span>
           </button>
 
           <button
@@ -189,16 +189,16 @@ export const AlanSefiModal: React.FC<AlanSefiModalProps> = ({ isOpen, onClose })
             </div>
           )}
 
-          {/* TAB 2: DocuLog Vision & SAP 101/103 */}
+          {/* TAB 2: Waybill Vision & SAP 101/103 */}
           {activeTab === 'doculog_sap' && (
             <div className="space-y-6">
               <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-4">
                 <h3 className="text-sm font-bold text-white mb-2 flex items-center space-x-2">
                   <Database className="w-4 h-4 text-emerald-400" />
-                  <span>DocuLog Vision AI & SAP MIGO Entegrasyon Zinciri</span>
+                  <span>Waybill Vision AI & SAP MIGO Entegrasyon Zinciri</span>
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed mb-4">
-                  RampaRandevu, depoya gelen yükün sadece kapısını açmaz; irsaliyeyi optik yapay zeka ile okur, ERP (SAP) sistemine resmi mal kabul (MIGO 101/103) fişini anında üretir.
+                  DockPulse, depoya gelen yükün sadece kapısını açmaz; irsaliyeyi optik yapay zeka ile okur, ERP (SAP) sistemine resmi mal kabul (MIGO 101/103) fişini anında üretir.
                 </p>
 
                 {/* Integration Step Diagram */}
@@ -210,7 +210,7 @@ export const AlanSefiModal: React.FC<AlanSefiModalProps> = ({ isOpen, onClose })
                     <div>
                       <div className="text-xs font-bold text-white">e-İrsaliye QR & Kağıt Belge OCR Tarama</div>
                       <div className="text-[11px] text-slate-400 mt-0.5">
-                        Şoför nizamiyeye geldiğinde elindeki sevk irsaliyesi DocuLog Vision motoru tarafından taranır. 16 haneli GİB e-İrsaliye No, VKN ve kalemler 1.4 saniyede ayrıştırılır (%99.8 doğruluk).
+                        Şoför nizamiyeye geldiğinde elindeki sevk irsaliyesi Waybill Vision motoru tarafından taranır. 16 haneli GİB e-İrsaliye No, VKN ve kalemler 1.4 saniyede ayrıştırılır (%99.8 doğruluk).
                       </div>
                     </div>
                   </div>
@@ -243,7 +243,7 @@ export const AlanSefiModal: React.FC<AlanSefiModalProps> = ({ isOpen, onClose })
 
               {/* Sample Payload Snippet */}
               <div className="bg-[#0A0E17] border border-slate-800 p-3.5 rounded-xl font-mono text-[11px] text-slate-300">
-                <div className="text-slate-500 mb-1 font-sans text-xs font-semibold">DocuLog to SAP Entegrasyon JSON Şeması:</div>
+                <div className="text-slate-500 mb-1 font-sans text-xs font-semibold">Waybill to SAP Entegrasyon JSON Şeması:</div>
                 <pre className="text-cyan-400 overflow-x-auto">{`{
   "event": "DOCULOG_GOODS_RECEIPT_POSTED",
   "waybill_number": "GIB202600004912",
@@ -333,7 +333,7 @@ export const AlanSefiModal: React.FC<AlanSefiModalProps> = ({ isOpen, onClose })
                   <span>İnternet veya bulut bağlantısı kesilirse depoda saha operasyonu durur mu?</span>
                 </div>
                 <div className="text-[11px] text-slate-300 mt-2 bg-[#111827] p-3 rounded-lg border border-slate-800">
-                  <strong className="text-emerald-400">Cevap:</strong> Kesinlikle durmaz. RampaRandevu **Offline-First & Local Edge** mimarisine sahiptir. Nizamiyedeki tablet ve kapı donanımları lokal ağdaki (LAN) Edge Gateway üzerinde çalışan SQLite WAL veritabanıyla çalışır. İnternet geri geldiğinde arka planda çift yönlü senkronizasyon (Reconciliation) tamamlanır.
+                  <strong className="text-emerald-400">Cevap:</strong> Kesinlikle durmaz. DockPulse **Offline-First & Local Edge** mimarisine sahiptir. Nizamiyedeki tablet ve kapı donanımları lokal ağdaki (LAN) Edge Gateway üzerinde çalışan SQLite WAL veritabanıyla çalışır. İnternet geri geldiğinde arka planda çift yönlü senkronizasyon (Reconciliation) tamamlanır.
                 </div>
               </div>
 
@@ -384,7 +384,7 @@ export const AlanSefiModal: React.FC<AlanSefiModalProps> = ({ isOpen, onClose })
         {/* Footer */}
         <div className="px-6 py-3.5 bg-[#111827] border-t border-slate-700/80 flex items-center justify-between">
           <div className="text-xs text-slate-400 font-mono">
-            RampaRandevu Savunma Dökümanı — LojistikGirisimleri AR-GE Laboratuvarı
+            DockPulse Savunma Dökümanı — LojistikGirisimleri AR-GE Laboratuvarı
           </div>
           <button
             onClick={onClose}

@@ -311,7 +311,7 @@ export const BookingWizardModal: React.FC<BookingWizardModalProps> = ({
                 <div className="flex items-center space-x-2">
                   <Sparkles className="w-4 h-4 text-cyan-400" />
                   <div>
-                    <div className="text-xs font-bold text-white">DocuLog Vision AI İrsaliye Ön-Ayrıştırma</div>
+                    <div className="text-xs font-bold text-white">Waybill Vision AI İrsaliye Ön-Ayrıştırma</div>
                     <div className="text-[11px] text-slate-400">Yoldayken irsaliye taranacak ve ERP PO ile eşlenecek.</div>
                   </div>
                 </div>

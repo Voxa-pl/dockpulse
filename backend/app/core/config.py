@@ -5,7 +5,7 @@ from typing import List
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 class Settings:
-    PROJECT_NAME: str = "RampaRandevu"
+    PROJECT_NAME: str = "DockPulse"
     VERSION: str = "1.0.0"
     API_V1_PREFIX: str = "/api/v1"
     
